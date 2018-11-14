@@ -36,5 +36,10 @@ public class main extends methods {
 		driver.findElement(By.id("logonform-password")).sendKeys(bPassword);
 
 	}
+	
+	public static void gitrep(){
+		
+		System.out.println("checking.....!");
+	}
 
 }
