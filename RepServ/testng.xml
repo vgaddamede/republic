@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Rep_Suite">
+  <test thread-count="5" name="Regression_Tests">
+  <parameter name ="aEmailadd" value="gaddamedevishal@gmail.com"/>
+    <parameter name ="aPassword" value="testtest"/>
+    <parameter name ="bEmailadd" value="yahoo@gmail.com"/>
+    <parameter name ="bPassword" value="testtest"/>
+    <classes>
+      <class name="Delta.RepServ.methods"/>
+      <class name="Delta.RepServ.main"/>
+    </classes>
+  </test> <!-- Regression_Tests -->
+</suite> <!-- Rep_Suite -->
