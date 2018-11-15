@@ -9,16 +9,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class methods {
-	public static WebDriver driver;
+	private static WebDriver d;
+	public static WebDriver driver = d;
 
 	public static void browser_config() {
 		// TODO Auto-generated method stubk
 		System.out.println("My first output");
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\vgaddamede\\Downloads\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("https://www.republicservices.com/");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
+		d = new ChromeDriver();
+		d.get("https://www.republicservices.com/");
+		d.manage().window().maximize();
+		d.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
 		System.out.println("Website launched successfully");
 	}
 
