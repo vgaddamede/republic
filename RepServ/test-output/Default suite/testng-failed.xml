@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Delta.RepServ.main">
+      <class name="Delta.RepServ.Parallel">
         <methods>
-          <include name="login_invalid"/>
-          <include name="login_valid"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- Delta.RepServ.main -->
+      </class> <!-- Delta.RepServ.Parallel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -10,16 +10,16 @@ import org.testng.annotations.Test;
 
 public class methods {
 	private static WebDriver d;
-	public static WebDriver driver = d;
+	public static WebDriver driver = getD();
 
 	public static void browser_config() {
 		// TODO Auto-generated method stubk
 		System.out.println("My first output");
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\vgaddamede\\Downloads\\chromedriver.exe");
-		d = new ChromeDriver();
-		d.get("https://www.republicservices.com/");
-		d.manage().window().maximize();
-		d.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
+		setD(new ChromeDriver());
+		getD().get("https://www.republicservices.com/");
+		getD().manage().window().maximize();
+		getD().manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
 		System.out.println("Website launched successfully");
 	}
 
@@ -75,5 +75,13 @@ public class methods {
 
 		}
 
+	}
+
+	public static WebDriver getD() {
+		return d;
+	}
+
+	public static void setD(WebDriver d) {
+		methods.d = d;
 	}
 }

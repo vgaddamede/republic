@@ -17,7 +17,7 @@ public class main extends methods {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	@Parameters({ "aEmailadd", "aPassword" })
 	public void login_valid(String aEmailadd, String aPassword) {
 		methods.browser_config();
@@ -27,7 +27,7 @@ public class main extends methods {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	@Parameters({ "bEmailadd", "bPassword" })
 	public void login_invalid(String bEmailadd, String bPassword) {
 		methods.browser_config();
@@ -41,5 +41,7 @@ public class main extends methods {
 		
 		System.out.println("checking.....!");
 	}
+	
+	
 
 }

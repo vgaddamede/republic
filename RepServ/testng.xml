@@ -5,10 +5,20 @@
   <parameter name ="aEmailadd" value="gaddamedevishal@gmail.com"/>
     <parameter name ="aPassword" value="testtest"/>
     <parameter name ="bEmailadd" value="yahoo@gmail.com"/>
+    
     <parameter name ="bPassword" value="testtest"/>
+    
     <classes>
-      <class name="Delta.RepServ.methods"/>
-      <class name="Delta.RepServ.main"/>
+       <class name = "Delta.RepServ.Parallel"/>
+        <parameter name = "browser" value ="chrome"/>
+        <parameter name = "browser" value ="ie"/>
     </classes>
-  </test> <!-- Regression_Tests -->
-</suite> <!-- Rep_Suite -->
+   
+     <!-- <classes>
+      <class name="Delta.RepServ.methods"/>
+     <class name="Delta.RepServ.main"/>
+     
+    </classes> -->
+    
+  </test> 
+</suite> 
