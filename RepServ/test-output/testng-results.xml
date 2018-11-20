@@ -1,35 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="1" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Rep_Suite" duration-ms="133" started-at="2018-11-19T11:02:56Z" finished-at="2018-11-19T11:02:57Z">
+  <suite name="Default suite" duration-ms="46042" started-at="2018-11-19T15:21:06Z" finished-at="2018-11-19T15:21:52Z">
     <groups>
     </groups>
-    <test name="Regression_Tests" duration-ms="133" started-at="2018-11-19T11:02:56Z" finished-at="2018-11-19T11:02:57Z">
-      <class name="Delta.RepServ.Parallel">
-        <test-method status="FAIL" signature="beforeClass(java.lang.String)[pri:0, instance:Delta.RepServ.Parallel@afc191]" name="beforeClass" duration-ms="112" started-at="2018-11-19T11:02:57Z" finished-at="2018-11-19T11:02:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ie]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The path to the driver executable must be set by the webdriver.ie.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver. The latest version can be downloaded from http://selenium-release.storage.googleapis.com/index.html]]>
-            </message>
+    <test name="Default test" duration-ms="46042" started-at="2018-11-19T15:21:06Z" finished-at="2018-11-19T15:21:52Z">
+      <class name="Delta.RepServ.Feedback">
+        <test-method status="FAIL" signature="feedback()[pri:0, instance:Delta.RepServ.Feedback@1371b2d]" name="feedback" duration-ms="46001" started-at="2018-11-19T15:21:06Z" finished-at="2018-11-19T15:21:52Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.ie.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver. The latest version can be downloaded from http://selenium-release.storage.googleapis.com/index.html
-at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:125)
-at org.openqa.selenium.ie.InternetExplorerDriverService.access$000(InternetExplorerDriverService.java:35)
-at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:188)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
-at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:281)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:211)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:150)
-at Delta.RepServ.Parallel.beforeClass(Parallel.java:31)
+              <![CDATA[java.lang.NullPointerException
+at Delta.RepServ.Feedback.feedback(Feedback.java:22)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -57,15 +39,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:Delta.RepServ.Parallel@afc191]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-11-19T11:02:57Z" finished-at="2018-11-19T11:02:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- Delta.RepServ.Parallel -->
-    </test> <!-- Regression_Tests -->
-  </suite> <!-- Rep_Suite -->
+        </test-method> <!-- feedback -->
+      </class> <!-- Delta.RepServ.Feedback -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

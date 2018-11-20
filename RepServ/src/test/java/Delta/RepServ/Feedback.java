@@ -1,29 +1,32 @@
 package Delta.RepServ;
 
-import java.util.concurrent.TimeUnit;
-
-import org.apache.bcel.generic.Select;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-
+import org.seleniumhq.jetty9.util.log.Log;
 import org.testng.annotations.Test;
 
-import junit.framework.Assert;
-
 public class Feedback extends methods {
+	 //private static Logger Log = Logger.getLogger(Log.class.getName());//
+     static Logger log = Logger.getLogger(Feedback.class.getName());
+
+
   @Test
   public void feedback() throws InterruptedException {
 	       
 	     main.browser_config();
+	     log.info("browser is launched");
 	     //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	     System.out.println("into feedback class");
+	    // Log.info("driver is into feedback class");
 	     //Thread.sleep(10000);
 		 getD().findElement(By.xpath("//button[@id='nebula_div_btn']/div[2]")).click();
 	     getD().switchTo().frame(1);
+	     log.info("ensure driver is into frame");
 	     System.out.println("into frame");
 	     //Thread.sleep(3000);
 		 getD().findElement(By.xpath("//span[9]/label/span")).click();
 	     //Assert.assertEquals(true, 8);
+		 log.info("8th rating is selected");
 	     System.out.println("selected 8");
 	     //getD().findElement(By.id("317a-448a-c7df-1adb-cd3f-95ec-a1ed-a93e")).click();
 	     //Thread.sleep(1000);

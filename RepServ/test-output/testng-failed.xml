@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Rep_Suite]">
-  <test thread-count="5" name="Regression_Tests(failed)">
-    <parameter name="aEmailadd" value="gaddamedevishal@gmail.com"/>
-    <parameter name="browser" value="ie"/>
-    <parameter name="bPassword" value="testtest"/>
-    <parameter name="bEmailadd" value="yahoo@gmail.com"/>
-    <parameter name="aPassword" value="testtest"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Delta.RepServ.Parallel">
+      <class name="Delta.RepServ.Feedback">
         <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass" invocation-numbers="0"/>
+          <include name="feedback"/>
         </methods>
-      </class> <!-- Delta.RepServ.Parallel -->
+      </class> <!-- Delta.RepServ.Feedback -->
     </classes>
-  </test> <!-- Regression_Tests(failed) -->
-</suite> <!-- Failed suite [Rep_Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
